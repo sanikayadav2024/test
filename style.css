@@ -11,14 +11,33 @@
       background-color: #004080;
   }
 
-  .navbar-brand img {
-      height: 50px;
-  }
+ .navbar-brand img {
+    height: 40px;
+    width: auto;
+    max-height: 8vh; /* Ensures logo scales on smaller screens */
+}
+
+.navbar-brand span {
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Responsive text size */
+    font-weight: bold;
+}
+
 
   .navbar-nav .nav-link {
       color: white !important;
       font-weight: 500;
   }
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 30px;
+    }
+
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+}
+
 
   .logo-egg-horizontal {
       width: 90px;
