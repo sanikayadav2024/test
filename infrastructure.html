@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lightbox2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <style>
+  .cursor-pointer {
+    cursor: pointer;
+  }
+</style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-egg-horizontal">
+                    <img src="logo.jpg" alt="Miicron Logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products and Applications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quality-control.html">Quality Control</a></li>
+                    <li class="nav-item"><a class="nav-link" href="infrastructure.html">Infrastructure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packaging.html">Packaging</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section class="container py-5">
+  <h2 class="fw-bold text-primary mb-5 text-center">Infrastructure</h2>
+
+  <div class="row g-4">
+    <!-- Image Card 1 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center border-0 shadow-sm">
+        <img src="reactor1.jpg" alt="Main Reactor Assembly" class="img-fluid rounded cursor-pointer"
+          data-bs-toggle="modal" data-bs-target="#modal1">
+        <div class="card-body">
+          <p class="card-text fw-semibold text-muted">Main Reactor Assembly</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Card 2 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center border-0 shadow-sm">
+        <img src="reactor2.jpg" alt="Support Reactor System" class="img-fluid rounded cursor-pointer"
+          data-bs-toggle="modal" data-bs-target="#modal2">
+        <div class="card-body">
+          <p class="card-text fw-semibold text-muted">Support Reactor System</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Card 3 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center border-0 shadow-sm">
+        <img src="warehouse-storage.jpg" alt="Warehouse & Storage Area" class="img-fluid rounded cursor-pointer"
+          data-bs-toggle="modal" data-bs-target="#modal3">
+        <div class="card-body">
+          <p class="card-text fw-semibold text-muted">Warehouse & Storage Area</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Card 4 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center border-0 shadow-sm">
+        <img src="labelling.jpg" alt="Labelling & Packing Section" class="img-fluid rounded cursor-pointer"
+          data-bs-toggle="modal" data-bs-target="#modal4">
+        <div class="card-body">
+          <p class="card-text fw-semibold text-muted">Labelling & Packing Section</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="reactor1.jpg" alt="Support Reactor System" class="img-fluid rounded-top w-100">
+      </div>
+      <div class="modal-footer bg-light">
+        <h5 class="mb-0 text-center w-100 fw-semibold text-dark">Main Reactor Assembly</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="reactor2.jpg" alt="Support Reactor System" class="img-fluid rounded-top w-100">
+      </div>
+      <div class="modal-footer bg-light">
+        <h5 class="mb-0 text-center w-100 fw-semibold text-dark">Support Reactor System</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="warehouse-storage.jpg" alt="Warehouse & Storage Area" class="img-fluid rounded-top w-100">
+      </div>
+      <div class="modal-footer bg-light">
+        <h5 class="mb-0 text-center w-100 fw-semibold text-dark">Warehouse & Storage Area</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="labelling.jpg" alt="Labelling & Packing Section" class="img-fluid rounded-top w-100">
+      </div>
+      <div class="modal-footer bg-light">
+        <h5 class="mb-0 text-center w-100 fw-semibold text-dark">Labelling & Packing Section</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <footer>
+        <div>All Rights Reserved By Miicron | Designed By <a href="https://mirackle.com/" class="text-white"
+                target="_blank">Sanika</a></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
+</body>
+
+</html>

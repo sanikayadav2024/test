@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Smaller modal size than modal-lg */
+        .modal-custom {
+            max-width: 600px;
+            width: 90%;
+        }
+
+        /* Optional: Center the modal title and image spacing */
+        .modal-content {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .modal-title {
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 1rem 0;
+        }
+
+        .modal-body img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-egg-horizontal">
+                    <img src="logo.jpg" alt="Miicron Logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products and Applications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quality-control.html">Quality Control</a></li>
+                    <li class="nav-item"><a class="nav-link" href="infrastructure.html">Infrastructure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packaging.html">Packaging</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container py-5">
+        <h2 class="fw-bold text-primary mb-4">SEA FREIGHT</h2>
+        <p>
+            We offer the following packing: UN Certified Open top MS drums — Net 150 kgs each drum.
+            Four MS Drums on each pallet. Each pallet is net 600 kgs.
+            A 20 feet FCL is stuffed with 12 MT of cargo.
+        </p>
+        <p class="fw-semibold mb-4">
+            <strong>Net. 600 kgs. Pallet – for Drums of 150Kg / pallet / FCL Stuffed</strong>
+        </p>
+
+        <!-- Image Grid -->
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package1.jpg" alt="UN Certified MS Drums" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal1">
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package2.jpg" alt="Labeling Details" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal2">
+            </div>
+        </div>
+    </section>
+    <!-- Modal 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package1.jpg" alt="Package 7" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+     <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package2.jpg" alt="Package 7" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section class="container py-5">
+        <p>
+            UN Certified paper bags : Net 25 kgs each bags. Twenty bags on each pallet - 500 kgs net /pallet A 20 feet
+            FCL is stuffed with 30 pallets of net 500 kgs each totaling 15 MT/ FCL.
+        </p>
+
+        <!-- Image Grid -->
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package4.jpg" alt="UN Certified MS Drums" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal4">
+                <p class="mt-2">Net.25 kgs. bag</p>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package5.jpg" alt="Labeling Details" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal5">
+                <p class="mt-2">Net.500 kgs. pallet</p>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package6.jpg" alt="Labeling Details" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal6">
+                <p class="mt-2">FCL Stuffed</p>
+            </div>
+        </div>
+    </section>
+ 
+    <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package4.jpg" alt="Package 7" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package5.jpg" alt="Package 8" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package6.jpg" alt="Package 9" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container py-5">
+        <h2 class="fw-bold text-primary mb-4">AIR FREIGHT</h2>
+        <p>
+            UN Certified Open top plastic drums: Net 50 kgs each drum. Four plastic drums on each pallet. Each pallet is
+            net 200 kgs. Labelling as per GHS/IATA norms.
+        </p>
+        <p class="fw-semibold mb-4">
+            <strong>Net 50 kgs. Open top plastic drums</strong>
+        </p>
+
+        <!-- Image Grid -->
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package7.jpg" alt="Drums Front View" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal7">
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package8.jpg" alt="Label Close-Up" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal8">
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package9.jpg" alt="Drums Side View" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal9">
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package10.jpg" alt="Pallet Packed" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal10">
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package11.jpg" alt="Top Sealed Drums" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal11">
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="package12.jpg" alt="Complete Pallet View" class="img-fluid rounded shadow-sm gallery-img"
+                    data-bs-toggle="modal" data-bs-target="#modal12">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal 7 -->
+    <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package7.jpg" alt="Package 7" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package8.jpg" alt="Package 8" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div class="modal fade" id="modal9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package9.jpg" alt="Package 9" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 10 -->
+    <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package10.jpg" alt="Package 10" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 11 -->
+    <div class="modal fade" id="modal11" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package11.jpg" alt="Package 11" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 12 -->
+    <div class="modal fade" id="modal12" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="package12.jpg" alt="Package 12" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div>All Rights Reserved By Miicron | Designed By <a href="https://mirackle.com/" class="text-white"
+                target="_blank">Sanika</a></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
